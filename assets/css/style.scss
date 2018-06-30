@@ -1,0 +1,232 @@
+/* - */
+/* - */
+
+@font-face {
+  font-family: 'SanFranciscoText';
+  src: url('../../assets/fonts/SanFranciscoText-Bold.otf');
+  src: url('../../assets/fonts/SanFranciscoText-Medium.otf');
+  src: url('../../assets/fonts/SanFranciscoText-Regular.otf');
+}
+
+body {
+  font-size: 14px;
+	font-family: 'SanFranciscoText', 'Playfair Display', serif;
+}
+
+/* - Header - */
+header {
+  width: 100%;
+	height: 100vh;
+	background-image: url("../../assets/img/header-BG.jpg");
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.changeColor {
+	z-index: 9999;
+	position: fixed;
+	width: 100%;
+	background-color: rgba($color: #000000, $alpha: .8);
+	transition: all .4s ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link {
+	padding: 0;
+	transition: color .5s ease-in-out;
+}
+.navigation {
+	color: #fff !important;
+}
+.nav-item {
+	font-weight: bold;
+	padding-bottom: 14px;
+	margin-right: 12px;
+	margin-left: 12px;
+}
+
+#Logo {
+	width: 50%;
+	transition: all .5s ease-in-out;
+}
+.dl-resume {
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	background-color: #A10A0D;
+	border-radius: 100px;
+	font-size: 0.5rem;
+	padding: 0.5rem 0.875rem;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("../img/menu-icons/menu-bars.png") !important;
+}
+/* - /Header - */
+
+/* - Header-Title - */
+.header-title {
+	margin-top: 100px;
+}
+h1 {
+	color: #fff;
+	font-size:  2.25rem;
+	font-weight: 400;
+	text-align: center;
+	white-space: pre-line;
+}
+.subtitle {
+	font-size: 1.5rem;
+}
+.dot {
+	font-family: 'SanFranciscoText', sans-serif;
+	color: #A10A0D;
+}
+.typed-cursor {
+	color: #A10A0D;
+}
+/* - Header-Title - */
+
+
+/* - About Me - */
+h2 {
+  text-transform: uppercase;
+  font-family: 'SanFranciscoText', sans-serif;
+}
+.horizontal-divider {
+  width: 90px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #000;
+}
+.sm-description {
+  font-style: italic;
+  margin-top: 1rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-family: 'PlayFair Display', serif;
+}
+.description {
+  font-size: 14px;
+  line-height: 1.7;
+  white-space: pre-line;
+  font-family: 'SanFranciscoText', sans-serif;
+}
+.wrapper__about {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+/* - /About Me - */
+
+/* - Skills & Expertice - */
+.skills, .education, .contact {
+	background-color: #f8f8f8;
+} 
+.skills-details p {
+  text-align: left;
+  white-space: pre-line;
+}
+/* - /Skills & Expertice - */
+
+
+/* - Work & Experience - */
+.detail {
+	white-space: pre-line;
+}
+.post, .dates h6 {
+	font-size: 18px;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	font-family: 'Playfair Display', serif;
+}
+.vertical-divider {
+	width: 2px;
+	height: 164px;
+	background-color: #A10A0D;
+}
+.time__experience {
+	margin: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+/* - Work & Experience - */
+
+
+/* - Education - */
+
+/* - /Education - */
+
+
+/* - Portfolio - */
+.container-mix {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	align-items: center;
+}
+/* - /Portfolio - */
+
+
+/* - Contact - */
+input, textarea {
+	color: #fff !important;
+	text-transform: capitalize;
+	border-left: none !important;
+	border-top: none !important;
+	border-right: none !important;
+	border-radius: 0px !important;
+	background-color: #27211D !important;
+	border-bottom: 3px solid #A10A0D !important;
+}
+textarea {
+  resize: none;
+}
+::placeholder {
+	color: #A10A0D !important;
+	font-size: 12px !important;
+}
+/* - /Contact - */
+
+/* - Footer - */
+footer {
+	background-color: #27211D;
+}
+.footer-infos {
+	color: #A10A0D;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.github {
+	color: #A10A0D;
+}
+.github:hover {
+	color: #A10A0D;
+	text-decoration: none !important;
+}
+/* - /Footer - */
+
+
+/* Portfolio Filter */
+.active-tag {
+  background-color: #A10A0D !important;
+}
+.filter-link {
+  cursor: pointer;
+}
+/* /Portfolio Filter */
+
+
+
+
+
+
+
+
+
+
+
