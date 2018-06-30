@@ -1,3 +1,29 @@
+@media screen and (max-width: 320px) {
+  #logo {
+    width: 50%;
+  }
+  h1 {
+    font-size: 18px !important;
+  }
+  h4 {
+    font-size: 14px !important;
+  }
+  .subtitle {
+    font-size: 18px !important;
+  }
+  .sm-description {
+    letter-spacing: 0px !important;
+  }
+  .nav-item {
+     padding-bottom: 0 !important;
+     margin-right: 0px !important;
+     margin-left: 0px !important;
+  }
+  .post {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+}
 /* Small devices (landscape phones, 576px and up)*/
 @media screen and (max-width: 576px) { 
   .time__experience {
@@ -67,6 +93,11 @@
     background-image: url("../img/menu-icons/menu-bars.png");
   }
   /* /Header */
+  .description, .detail {
+    text-align: justify;
+    font-size: 12px;
+    white-space: normal;
+  }
 }
 
 /* Breakpoints Intermédiaires */
@@ -90,4 +121,9 @@
     background-image: url("../img/menu-icons/menu-bars.png");
   }
   /* /Header */
+  .description, .detail {
+    text-align: justify;
+    font-size: 12px;
+    white-space: normal;
+  }
 }
