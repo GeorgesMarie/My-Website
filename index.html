@@ -21,7 +21,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<!-- Statics Links -->
-	<link rel="stylesheet" href="assets/css/hover.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/radial-progress-bar.css">
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -42,26 +41,26 @@
 
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mx-auto">
-		      <li class="nav-item text-uppercase active" data-anchor="home">
-		        <a class="nav-link js-scrollTo navigation" href="#home">home</a>
+		      <li class="nav-item text-uppercase" data-anchor="home">
+		        <a class="nav-link js-scrollTo text-white active" href="#home">home</a>
 		      </li>
-		      <li class="nav-item text-uppercase hvr-underline-from-center" data-anchor="about">
-		        <a class="nav-link js-scrollTo navigation" href="#about">about me</a>
+		      <li class="nav-item text-uppercase" data-anchor="about">
+		        <a class="nav-link js-scrollTo text-white" href="#about">about me</a>
 		      </li>
-		      <li class="nav-item text-uppercase hvr-underline-from-center" data-anchor="skills">
-		        <a class="nav-link js-scrollTo navigation" href="#skills">skills</a>
+		      <li class="nav-item text-uppercase" data-anchor="skills">
+		        <a class="nav-link js-scrollTo text-white" href="#skills">skills</a>
 		      </li>
-		      <li class="nav-item text-uppercase hvr-underline-from-center" data-anchor="experience">
-		        <a class="nav-link js-scrollTo navigation" href="#experience">experience</a>
+		      <li class="nav-item text-uppercase" data-anchor="experience">
+		        <a class="nav-link js-scrollTo text-white" href="#experience">experience</a>
 		      </li>
-		      <li class="nav-item text-uppercase hvr-underline-from-center" data-anchor="education">
-		        <a class="nav-link js-scrollTo navigation" href="#education">education</a>
+		      <li class="nav-item text-uppercase" data-anchor="education">
+		        <a class="nav-link js-scrollTo text-white" href="#education">education</a>
 		      </li>
-		      <li class="nav-item text-uppercase hvr-underline-from-center" data-anchor="portfolio">
-		        <a class="nav-link js-scrollTo navigation" href="#portfolio">portfolio</a>
+		      <li class="nav-item text-uppercase" data-anchor="portfolio">
+		        <a class="nav-link js-scrollTo text-white" href="#portfolio">portfolio</a>
 		      </li>
-		      <li class="nav-item text-uppercase hvr-underline-from-center" data-anchor="contact">
-		        <a class="nav-link js-scrollTo navigation" href="#contact">contact</a>
+		      <li class="nav-item text-uppercase" data-anchor="contact">
+		        <a class="nav-link js-scrollTo text-white" href="#contact">contact</a>
 		      </li>
 		    </ul>
 		    <form class="form-inline my-2 my-lg-0">
@@ -69,9 +68,15 @@
 		    </form>
 		  </div>
 		</nav>
+	</header>
+	<!-- /Header -->
 
-		<div class="container">
-			<div class="row align-items-center flex-column justify-content-center header-title">
+	<!--Main  -->
+	<main>
+		<!-- Container Fluid -->
+		<div class="container-fluid">
+			<!-- Typed Js -->
+		<div id="home" class="row align-items-center flex-column justify-content-center header-title">
 				<h1 class="text-uppercase font-weight-light"><span class="text-capitalize">hello</span> <span class="dot">!</span> i'm georges marie mah
 					<span class="subtitle">front <span class="dot"> - </span> end web developer</span>
 				</h1>
@@ -81,12 +86,10 @@
 				</div>
 				<button class="text-uppercase dl-resume mt-5 btn-about">about me</button>
 			</div>
+			<!-- /Typed js -->
 		</div>
-	</header>
-	<!-- /Header -->
+		<!-- /Container Fluid -->
 
-	<!--Main  -->
-	<main>
 		<!-- Container -->
 		<div class="container">
 			<!-- About -->
@@ -372,12 +375,13 @@
   </footer>
   <!-- /Footer -->
 
-	<!-- script -->
+	<!-- Scripts -->
 	<script src="assets/js/typed.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/mauGallery.min.js"></script>
 	<script src="assets/js/scripts.js"></script>
 	<script src="assets/js/projectsLink.js"></script>
+	<script src="assets/js/jquery.sticky-nav.js"></script>
   <!-- dyScrollUpJS -->
 	<script src="assets/js/dyscrollup.min.js"></script>
 	
@@ -388,16 +392,12 @@
 				if ($(this).scrollTop() > 50) {
 					console.log("Ta mère !!!!");
 					$('nav').addClass('changeColor');
-					$('header').css("display", "inline-block");
 					$('#Logo').css("width", 30 + "%");
-					$('.header-title').css("margin-top", 250);
 				} 
 				if ($(this).scrollTop() < 50) {
 					console.log("Salaud !!!!");
 					$('nav').removeClass('changeColor');
-					$('header').css("display", "block");
 					$('#Logo').css("width", 50 + "%");
-					$('.header-title').css("margin-top", 100);
 				}; 
 		});
 	});
@@ -433,21 +433,6 @@
 				});
 		}).trigger('scroll');
 	});
-	</script>
-
-	<script type="text/javascript">
-
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-36251023-1']);
-		_gaq.push(['_setDomainName', 'jqueryscript.net']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-
 	</script>
 
 	<!-- Typed Js -->
@@ -491,7 +476,7 @@
 	
   <!-- finally dyScrollUpJS initialize code -->
   <script>
-  dyscrollup.init({
+  	dyscrollup.init({
     showafter : 3000,
     scrolldelay : 2500,
     position : "right",
@@ -500,6 +485,19 @@
     width : 30,
     height : 30
   });
+	</script>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-36251023-1']);
+		_gaq.push(['_setDomainName', 'jqueryscript.net']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
 	</script>
 
 </body>
